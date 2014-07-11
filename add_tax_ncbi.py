@@ -19,7 +19,7 @@ tax.taxid2rank[554915] = 'kingdom' #Amoebozoa
 
 tax.taxid2rank[33634] = 'kingdom' #Stramenopiles
 tax.taxid2rank[4762] = 'class' #Oomycetes
-tax.taxid2rank[33154] = 'kingdom' #Opisthokonta 
+#tax.taxid2rank[33154] = 'kingdom' #Opisthokonta 
 tax.taxid2rank[2763] = 'phylum'#Rhodophyta
 tax.taxid2rank[554296] = 'kingdom' # Apusozoa 
 
@@ -49,7 +49,7 @@ for line in marker_blast.readlines():
 	column = line.split("\t")
 	key=column[0]
 	infor=column[1]
-	infor2=column[10]+"\t"+column[2]
+	infor2=column[10]+"\t"+column[2]+"\t"+column[1]
 		
 	blast_dict[key]=infor
 	blast_dict2[key]=infor2
